@@ -6,7 +6,8 @@
 2- To create a DNS zone. (I have created sandhu.cloud).
 - az network dns zone create -g RG-Az-DNS -n sandhu.cloud
 
-3-  To create a DNS record (I've created a CNAME record for the static web app so you need to add host name (sub domain) and value).
+3- To create a DNS record (I've created a CNAME record for the static web app so you need to add host name
+   (sub domain) and value).
 - az network dns record-set CNAME set-record --resource-group RG-Az-DNS --zone-name sandhu.cloud --record-set-name "hostname" --cname "value"
 
 4- To view all the DNS records in the zone. 
